@@ -136,7 +136,6 @@ class ValueIterationAgent(ValueEstimationAgent):
     def getQValue(self, state, action):
         return self.computeQValueFromValues(state, action)
 
-
 class PrioritizedSweepingValueIterationAgent(ValueIterationAgent):
     """
         * Please read learningAgents.py before reading this.*
@@ -188,8 +187,6 @@ class PrioritizedSweepingValueIterationAgent(ValueIterationAgent):
                 if diff > self.theta:
                     self.queue.update(p, -diff)
         
-
-
 
 class AsynchronousValueIterationAgent:
     print("Not part of this assignment.")

@@ -28,9 +28,12 @@ def question3a():
     """
       Prefer the close exit (+1), risking the cliff (-10).
     """
+    # answerDiscount = 0.1
+    # answerNoise = 0
+    # answerLivingReward = -4#-4
     answerDiscount = 0.1
     answerNoise = 0
-    answerLivingReward = -4 #-4
+    answerLivingReward = -4.0
     return answerDiscount, answerNoise, answerLivingReward
     # If not possible, return 'NOT POSSIBLE'
 
@@ -38,11 +41,11 @@ def question3b():
     """
       Prefer the close exit (+1), but avoiding the cliff (-10).
     """
-    # answerDiscount = None
-    # answerNoise = None
-    # answerLivingReward = None
+    # answerDiscount = 0.1
+    # answerNoise = .5 #0.1
+    # answerLivingReward = -1
     answerDiscount = 0.1
-    answerNoise = .1 #0.1
+    answerNoise = .1
     answerLivingReward = -1
     return answerDiscount, answerNoise, answerLivingReward
     # If not possible, return 'NOT POSSIBLE'
@@ -51,12 +54,12 @@ def question3c():
     """
       Prefer the distant exit (+10), risking the cliff (-10).
     """
-    # answerDiscount = None
-    # answerNoise = None
-    # answerLivingReward = None
+    # answerDiscount = 0.9
+    # answerNoise = 0 #1 
+    # answerLivingReward = -1 #-0.5
     answerDiscount = 1
-    answerNoise = 0 #1 
-    answerLivingReward = -0.5 #-0.5
+    answerNoise = 0
+    answerLivingReward = -1
     return answerDiscount, answerNoise, answerLivingReward
     # If not possible, return 'NOT POSSIBLE'
 
@@ -64,12 +67,9 @@ def question3d():
     """
       Prefer the distant exit (+10), avoiding the cliff (-10).
     """
-    # answerDiscount = None
-    # answerNoise = None
-    # answerLivingReward = None
     answerDiscount = 1
-    answerNoise = 0.1 #0.1
-    answerLivingReward = -0.5
+    answerNoise = 0.2 #0.2
+    answerLivingReward = -0.5 #-0.5
     return answerDiscount, answerNoise, answerLivingReward
     # If not possible, return 'NOT POSSIBLE'
 
@@ -77,16 +77,17 @@ def question3e():
     """
       Avoid both exits and the cliff (so an episode should never terminate).
     """
-    answerDiscount = 0.5
-    answerNoise = 0.7
-    answerLivingReward = 1000
+    answerDiscount = 1 #0.5
+    answerNoise = 0.1
+    answerLivingReward = 100
     return answerDiscount, answerNoise, answerLivingReward
     # If not possible, return 'NOT POSSIBLE'
 
 def question7():
-    answerEpsilon = None
-    answerLearningRate = None
-    return answerEpsilon, answerLearningRate
+    # answerEpsilon = 0
+    # answerLearningRate = 0.9
+    # return answerEpsilon, answerLearningRate
+    return "NOT POSSIBLE"
     # If not possible, return 'NOT POSSIBLE'
 
 if __name__ == '__main__':
