@@ -199,4 +199,3 @@ class ReinforcementAgent(ValueEstimationAgent):
         """
         self.lastState = state
         self.lastAction = action
-
